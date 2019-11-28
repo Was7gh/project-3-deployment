@@ -85,6 +85,7 @@ let jokes = [
   }
 ];
 //serves all our static files from the build directory.
+
 app.use(express.static(path.join(__dirname, "build")));
 app.get(express.json());
 
